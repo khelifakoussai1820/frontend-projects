@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+
+body {
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    background: url(pictures/background2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#title-home {
+    text-align: center;
+    color: white;
+    font-family: 'Lexend', sans-serif;
+    font-size: 18px;
+}
+
+.center-of-home {
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Lexend', sans-serif;
+
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.center-of-home p {
+    margin-left: 150px;
+    color: white;
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 50px;
+    column-gap: 40px;
+    row-gap: 40px;
+
+}
+
+.grid-content {
+    border-radius: 10px;
+    height: 150px;
+    background-color: rgba(201, 179, 179, 0.118);
+    backdrop-filter: blur(50px);
+    border: 1px solid rgb(105, 96, 96);
+
+
+    transition-delay: 0.5s;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+.grid-content:hover {
+    transform: scale(1.05);
+    cursor: grab;
+}
+
+
+h2 {
+    color: white;
+    margin-left: 120px;
+}
+
+.container p {
+    margin-left: 10px;
+}
