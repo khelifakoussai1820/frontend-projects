@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body {
+    background: url(pictures/background.jpg);
+}
+
+.navbar {
+    width: 100%;
+}
+
+.home-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: black;
+    font-family: 'Inter', sans-serif;
+}
+
+
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navlinks {
+    display: flex;
+    gap: 10px;
+}
+
+.navlinks a {
+    text-decoration: none;
+    color: black;
+    padding: 8px 8px 8px 8px;
+    border-radius: 5px;
+    font-family: 'Inter', sans-serif;
+    background: rgb(47, 235, 110);
+    background-size: 200%;
+    background-position: left;
+    transition: background-position 0.3s ease, color 0.3s ease;
+}
+
+.navlinks a:hover {
+    background-position: right;
+    color: rgb(130, 0, 180);
+}
+
+.social-media-pic {
+    height: 400px;
+    width: 400px;
+}
+
+.container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content p {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    color: black;
+}
+
+.content h1 {
+    font-family: 'Inter', sans-serif;
+}
+
+button {
+    background-color: rgb(47, 235, 110);
+    font-family: 'Inter', sans-serif;
+    color: black;
+    border-radius: 5px;
+    background-size: 200%;
+    font-size: 15px;
+    border: none;
+    padding: 10px 10px 10px 10px;
+    background-position: left;
+    transition: background-position 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    cursor: grab;
+    color: rgb(130, 0, 180);
+    background-position: right;
+
+}
+
+.process {
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.process p {
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0;
+    color: #0d1c1f;
+}
+
+.underline {
+    margin: 5px auto 0;
+    width: 60px;
+    height: 3px;
+    background-color: rgb(47, 235, 110);
+    border-radius: 2px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+}
+
+.grid-content {
+    margin-top: 5px;
+    cursor: grab;
+    transition: transform 0.3s ease;
+}
+
+.grid-content:hover {
+    transform: scale(1.05);
+}
+
+.grid-content h1 {
+    color: rgb(47, 235, 110);
+    font-size: 50px;
+}
