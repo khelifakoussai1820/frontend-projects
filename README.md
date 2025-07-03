@@ -9,8 +9,8 @@ Ce dépôt regroupe une collection de mini-projets web que je réalise pour perf
 
 | 📁 Projet | 📝 Description | 🔗 Lien |
 |----------|----------------|--------|
-| [`frontend-1`](./frontend-1) | 🎯 **Interactive Design** – Effet de loupe CSS avec glassmorphisme et design moderne. | *À venir* |
-| `frontend-2` | *Projet à venir...* | *À venir* |
+| [`frontend-1`](./frontend-1) | 🎯 **Interactive Design** – Effet de loupe CSS avec glassmorphisme et design moderne. | *terminé* |
+| `frontend-2` | (./frontend-2) | *À venir* |
 | `frontend-3` | *Projet à venir...* | *À venir* |
 
 *(Ce tableau sera mis à jour au fur et à mesure de l’ajout de nouveaux projets.)*
