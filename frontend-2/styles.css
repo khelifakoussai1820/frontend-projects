@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 body {
     background: url(pictures/background.jpg);
 }
@@ -25,27 +30,38 @@ body {
 
 .navlinks {
     display: flex;
-    gap: 10px;
+    background: #fff;
+    display: inline-block;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    width: 577px;
+    height: 34.7px;
 }
 
 .navlinks a {
-    text-decoration: none;
+    position: relative;
     color: black;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
     padding: 8px 8px 8px 8px;
-    border-radius: 5px;
-    font-family: 'Inter', sans-serif;
-    background: rgb(47, 235, 110);
-    background-size: 200%;
-    background-position: left;
-    transition: background-position 0.3s ease, color 0.3s ease;
+    /* background-color: rgb(47, 235, 110); */
+    background-color: white;
+    border-radius: 8px;
+    transition: background-color 0.1s ease;
 }
+
+
 
 .navlinks a:hover {
     background-position: right;
-    color: rgb(130, 0, 180);
+    color: rgb(255, 255, 255);
+    background-color: purple;
 }
 
-.social-media-pic {
+img {
     height: 400px;
     width: 400px;
 }
@@ -82,7 +98,7 @@ button {
 
 button:hover {
     cursor: grab;
-    color: rgb(130, 0, 180);
+    color: white;
     background-position: right;
 
 }
@@ -127,4 +143,73 @@ button:hover {
 .grid-content h1 {
     color: rgb(47, 235, 110);
     font-size: 50px;
+}
+
+.grid-about-container {
+    margin-top: 10px;
+    margin-left: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1000px;
+    gap: 100px;
+}
+
+.grid-services {
+    margin-top: 20px;
+    display: grid;
+    row-gap: 20px;
+    justify-content: center;
+
+}
+
+.email-form {
+    width: 265px;
+    border-radius: 9999px;
+    margin-left: 590px;
+    margin-top: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+input {
+    border: none;
+    border-radius: 9999px;
+    width: 200px;
+    height: 35px;
+}
+
+.btn-send {
+    border-radius: 9999px;
+    background-color: rgb(47, 235, 110);
+    border-radius: 9999px;
+    background-size: 200%;
+    font-size: 15px;
+    border: none;
+    padding: 10px 10px 10px 10px;
+}
+
+.btn-send:hover {
+    color: rgba(222, 10, 245, 0.849);
+
+}
+
+form {
+    box-shadow: 1px;
+}
+
+fieldset {
+    border: none;
+}
+
+.footer-link {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
 }
