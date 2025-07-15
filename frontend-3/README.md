@@ -18,7 +18,6 @@ Ce projet recrée une interface de type Netflix, avec :
 - 🧾 Une **description dynamique de la série Squid Game**.
 - 🔘 Des **boutons interactifs** ("Play" et "Trailer") stylisés façon Netflix.
 - ✨ Un effet d’apparition doux sur le texte.
-- 📱 Responsive Design en cours (optionnel).
 
 ---
 
