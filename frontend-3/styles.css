@@ -1,8 +1,9 @@
 html {
-    background-image: url('pictures/Squid_game.jpg');
+    background-image:
+        linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)),
+        url('pictures/SquigGame_Background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 
 img {
@@ -36,6 +37,10 @@ nav {
     border-radius: 10px;
 }
 
+.navlinks a:hover {
+    background-color: rgb(200, 182, 182);
+}
+
 .icons-links {
     position: relative;
     color: white;
@@ -56,14 +61,133 @@ nav {
     border-radius: 10px;
 }
 
+.icons-links a:hover {
+    background-color: #d05355;
+}
+
 .movie-flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 280px;
 }
 
 .posters {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     column-gap: 10px;
+
+}
+
+.flex-content {
+    color: white;
+    width: 500px;
+    margin-right: 60px;
+}
+
+#describe {
+    position: relative;
+    padding-left: 25px;
+    border-left: 5px solid red;
+    height: 350px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.115);
+    /* léger voile sombre */
+    backdrop-filter: blur(2px);
+    /* flou léger si compatible */
+    border-left: 5px solid red;
+}
+
+
+#describe::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: red;
+    box-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px red;
+    z-index: 1;
+}
+
+
+#describe h1 {
+    font-size: 36px;
+    font-weight: 800;
+    color: white;
+    text-shadow: 0 0 10px red;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 800;
+    color: white;
+    text-shadow: 0 0 10px red;
+}
+
+.img-cadre {
+    width: 100px;
+    height: 100px;
+    border: 3px solid white;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    transition: transform 0.3s ease;
+}
+
+.img-cadre:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+#btn-play {
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 15px 15px 15px 15px;
+    width: 150px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#btn-play:hover {
+    background-color: #ff1e22;
+    box-shadow: 0 0 10px #e50914;
+}
+
+#btn-trailer {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 15px 15px 15px 15px;
+    font-weight: bold;
+    width: 150px;
+    border-radius: 4px;
+    margin-left: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#btn-trailer:hover {
+    background-color: #ddd;
+}
+
+
+.actors {
+    width: 100px;
+    height: 100px;
+    border-radius: 9999px;
+    border: 2px solid white;
+    transition: transform 0.3s ease;
+}
+
+.actors:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+figcaption {
+    text-align: center;
 }
