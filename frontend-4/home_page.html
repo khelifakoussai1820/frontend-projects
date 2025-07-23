@@ -8,43 +8,237 @@
 
     <!------------------------------------  import --------------------------------------------->
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="boutique.html">
 
 </head>
 
 <body>
-    <nav>
-        <div class="logo">
+    <nav class="navbar">
+        <div class="navbar-left">
             <i class="fa-brands fa-apple"></i>
-            <p>AppleZone</p>
-            <a href="">iPhone</a>
-            <a href="">MacBook</a>
-            <a href="">Apple watch</a>
-            <a href="">AirPods</a>
-            <a href="">iPad</a>
+            <span>AppleZone</span>
         </div>
 
-        <div class="register">
-            <button>Login</button>
-            <button>Sign Up</button>
+        <ul class="navbar-links">
+            <li><a href="#our-services">Services</a></li>
+            <li><a href="#boutique">Boutique</a></li>
+            <li><a href="#promotion">Promotions</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="navbar-right">
+            <button class="btn login">Login</button>
+            <button class="btn signup">Sign Up</button>
         </div>
     </nav>
 
     <div class="welcome-div">
-        <h1>Bienvenus Chez AppleZone 🍏</h1>
-        <p>Votre destination incontournable pour découvrir l'univers Apple.
-            iPhone, MacBook, iPad, AirPods, Apple Watch…
-            Tous les produits authentiques et innovants réunis au même endroit.
+        <div class="msg">
+            <h1>Bienvenus Chez AppleZone </h1>
+            <p>Votre destination incontournable pour découvrir l'univers Apple.
+                iPhone, MacBook, iPad, AirPods, Apple Watch…
+                Tous les produits authentiques et innovants réunis au même endroit.
 
-            Profitez de la qualité Apple avec un service client dédié, des offres exclusives,et une expérience d’achat
-            simple, rapide et sécurisée.
+                Profitez de la qualité Apple avec un service client dédié, des offres exclusives,et une expérience
+                d’achat
+                simple, rapide et sécurisée.
 
-            🔍 Explorez. 💼 Achetez. 💫 Vivez l’expérience Apple.
-        </p>
-
-        <button onclick="window.open('boutique.html', '_blank' )">Explorez Notre Boutique</button>
+                🔍 Explorez. 💼 Achetez. 💫 Vivez l’expérience Apple.
+            </p>
+            <button onclick="location.href='#'">Qui sommes-nous ?</button>
+        </div>
     </div>
+
+    <h1 id="our-services">Nos Services</h1>
+
+    <div class="services-grid ">
+        <div class="service">
+            <div class="pic">
+                <img src="pictures/livraison.jpg" alt="">
+            </div>
+
+            <p> <strong> 🚚 la livraison 100% gratuite pour les 58 wilayas </strong> <br>.
+                Commandez vos iPhone et accessoires en toute confiance on s’occupe du reste, sans frais
+                supplémentaires !
+            </p>
+        </div>
+
+
+        <div class="service">
+            <div class="pic">
+                <img src="pictures/gift.jpg" alt="">
+            </div>
+
+            <p>
+                <strong>🎉 Offre exclusive !</strong> <br>
+                Chez notre boutique, pour l’achat de 3 produits, nous vous offrons un accessoire gratuit !
+                Profitez-en dès maintenant !
+            </p>
+        </div>
+
+        <div class="service">
+            <div class="pic">
+                <img src="pictures/time.jpg" alt="">
+            </div>
+
+            <p>
+                <strong>Nos Horaires</strong><br>
+                📅 Du dimanche au jeudi : de 9h à 15h <br>
+                📅 Week-end (Vendredi & Samedi) : de 15h à 18h
+            </p>
+        </div>
+
+    </div>
+
+    <div id="boutique" class="nos-produits">
+        <h1>Dans Notre Boutique</h1>
+        <div class="grid-products">
+
+            <div class="product-div">
+                <div class="product-pic">
+                    <img src="pictures/iPhones-removebg-preview.png" alt="">
+                </div>
+
+                <div class="names">
+                    <h3>iPhones</h3>
+                </div>
+
+            </div>
+
+            <div class="product-div">
+                <div class="product-pic">
+                    <img src="pictures/MacBook-removebg-preview.png" alt="">
+                </div>
+
+                <div class="names">
+                    <h3>MacBooks</h3>
+                </div>
+            </div>
+
+            <div class="product-div">
+                <div class="product-pic">
+                    <img src="pictures/apple_watch-removebg-preview.png" alt="">
+                </div>
+
+                <div class="names">
+                    <h3>iPhones</h3>
+                </div>
+            </div>
+
+            <div class="product-div">
+                <div class="product-pic">
+                    <img src="pictures/iPad-removebg-preview.png" alt="">
+                </div>
+
+                <div class="names">
+                    <h3>iPads</h3>
+                </div>
+            </div>
+
+            <div class="product-div">
+                <div class="product-pic">
+                    <img src="pictures/airPods-removebg-preview.png" alt="">
+                </div>
+
+                <div class="names">
+                    <h3>AirPods</h3>
+                </div>
+
+            </div>
+
+            <div class="product-div">
+                <div class="product-pic">
+                    <img src="pictures/apple_accessoire-removebg-preview.png" alt="">
+                </div>
+
+                <div class="names">
+                    <h3>Accessoires</h3>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <h1 id="promotion"> Produit en Promotion</h1>
+
+    <div class="promo-grid">
+        <div class="promo-product">
+            <div class="promo-pic">
+                <img src="pictures/macbook_air_m4_promo.png" alt="">
+
+            </div>
+            <figcaption>
+                <p><strong>Produit :</strong> MacBook Air m4 15 pouce</p>
+                <p><strong>CPU : </strong> m4 </p>
+                <p><strong>RAM : </strong> 16 Go </p>
+                <p><strong>Stockage : </strong> 256 Go</p>
+                <p><strong>Etat : </strong> Neuf sous emballage</p>
+                <p><strong>Prix : </strong> <s>310 000 DA</s></p>
+                <p><strong>Prix Promo :</strong> 270 000 DA</p>
+            </figcaption>
+
+            <div class="command-link">
+                <a href="">Commendez Maintenant &nbsp;&nbsp; <i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </div>
+
+
+        <div class="promo-product">
+            <div class="promo-pic">
+                <img src="pictures/iPhone16_promo.png" alt="">
+            </div>
+
+            <figcaption>
+                <p><strong>Produit :</strong> iPhone 16</p>
+                <p><strong>CPU : </strong> A18</p>
+                <p><strong>Stockage : </strong> 256 Go</p>
+                <p><strong>Caméra :</strong> 48 Mpx</p>
+                <p><strong>Etat : </strong> Excellente</p>
+                <p><strong>Prix :</strong> <s>200 850 Da</s></p>
+                <p><strong>Prix Promo : </strong> 190 000 DA</p>
+            </figcaption>
+
+            <div class="command-link">
+                <a href="">Commendez Maintenant &nbsp;&nbsp; <i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+
+        </div>
+
+        <div class="promo-product">
+            <div class="promo-pic">
+                <img src="pictures/airPods4_prom.png" alt="">
+            </div>
+            <figcaption>
+                <p><strong>Produit :</strong> AirPods 4</p>
+                <p><strong>Etat : </strong> avec boite</p>
+                <p><strong>Chargeur : </strong> USB-C</p>
+                <p><strong>Batterie : </strong>5h d'écoute | 4.5h appel</p>
+                <p><strong>Connectivité : </strong>Bluetooth 5.3</p>
+                <p><strong>Prix :</strong> <s>15000 Da</s></p>
+                <p><strong>Prix Promo : </strong> 12000 DA</p>
+            </figcaption>
+
+            <div class="command-link">
+                <a href="">Commendez Maintenant &nbsp;&nbsp; <i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <h1 id="about-us">Qui sommes-nous ?</h1>
+    <div>
+
+    </div>
+
+
+    <footer id="contact">
+        <p>&copy; 2025 AppleZone. Tous droits réservés.</p>
+        <p>Contact : support@applezone.com | +213 6 99 88 77 66</p>
+    </footer>
+
+
 
 </body>
 
