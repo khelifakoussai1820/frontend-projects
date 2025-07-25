@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Produits Apple</title>
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+        }
+
+        .product-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+        }
+
+        .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .pagination {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .pagination button {
+            margin: 0 5px;
+            padding: 8px 12px;
+            border: 1px solid #007bff;
+            background-color: white;
+            color: #007bff;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .pagination button.active {
+            background-color: #007bff;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Nos Produits Apple</h1>
+
+    <div class="product-container" id="product-container"></div>
+    <div class="pagination" id="pagination"></div>
+
+    <script>
+        const products = [
+            "iPhone 15 Pro", "iPhone 15", "iPhone 14", "iPhone 13", "iPhone SE",
+            "iPad Pro", "iPad Air", "iPad Mini", "iPad 10", "iMac 24",
+            "MacBook Air", "MacBook Pro", "AirPods Pro", "AirPods Max", "Apple Watch Ultra",
+            "Apple Watch Series 9", "HomePod", "Apple TV", "Apple Pencil", "Magic Keyboard",
+            "iPhone 12", "iPhone 11", "iPhone XR", "iPad 9", "Mac Mini"
+        ]; // total = 25 produits
+
+        const productsPerPage = 12;
+        let currentPage = 1;
+
+        function displayProducts(page) {
+            const container = document.getElementById("product-container");
+            container.innerHTML = "";
+
+            const start = (page - 1) * productsPerPage;
+            const end = start + productsPerPage;
+            const pageProducts = products.slice(start, end);
+
+            pageProducts.forEach(prod => {
+                const div = document.createElement("div");
+                div.className = "product";
+                div.textContent = prod;
+                container.appendChild(div);
+            });
+        }
+
+        function setupPagination() {
+            const pageCount = Math.ceil(products.length / productsPerPage);
+            const pagination = document.getElementById("pagination");
+            pagination.innerHTML = "";
+
+            for (let i = 1; i <= pageCount; i++) {
+                const btn = document.createElement("button");
+                btn.textContent = i;
+                if (i === currentPage) btn.classList.add("active");
+
+                btn.addEventListener("click", () => {
+                    currentPage = i;
+                    displayProducts(currentPage);
+                    setupPagination();
+                });
+
+                pagination.appendChild(btn);
+            }
+        }
+
+        // Initialisation
+        displayProducts(currentPage);
+        setupPagination();
+    </script>
+
+</body>
+
+</html>

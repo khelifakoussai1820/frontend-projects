@@ -1,0 +1,82 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    top: 0;
+}
+
+html {
+    background-image: url('pictures/backgroundMacBook.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+fieldset {
+    display: flex;
+    justify-content: center;
+    border: none;
+    width: 500px;
+    margin-top: 200px;
+    margin-left: 100px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.5);
+}
+
+fieldset h1 {
+    text-align: center;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    background-color: rgb(247, 231, 231);
+    height: 42px;
+    width: 380px;
+    border-radius: 30px;
+}
+
+input {
+    border-radius: 30px;
+    border: none;
+    height: 40px;
+    width: 340px;
+    background-color: rgb(247, 231, 231);
+}
+
+input:focus {
+    outline: none;
+}
+
+.div1 {
+    margin-top: 15px;
+}
+
+#link {
+    color: green;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+button {
+    width: 380px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    background-color: black;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: rgb(16, 16, 16);
+    cursor: pointer;
+}
+
+.link-btn {
+    margin-top: 15px;
+}

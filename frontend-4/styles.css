@@ -160,6 +160,15 @@
     padding-top: 15px;
 }
 
+h3 a {
+    text-decoration: none;
+    color: rgb(4, 4, 70);
+}
+
+h3 a:hover {
+    color: rgb(9, 9, 9);
+}
+
 .nos-produits {
     background-color: rgb(4, 4, 70);
     height: 860px;
@@ -176,6 +185,8 @@
 
 .product-div {
     height: 350px;
+    background-image: url('pictures/Pink\ &\ Dark\ Blue\ Gradient.jpg');
+    background-size: cover;
     width: 300px;
     transition: transform 0.3s ease;
 }
@@ -195,12 +206,16 @@ img {
 .product-pic {
     display: flex;
     justify-content: center;
-    background-color: white;
+    /* background-color: ; */
+    box-shadow: 12px 12px 12px rgb(0, 0, 0, 0.4);
+
 }
 
 .names {
-    background-color: orangered;
+    background-color: white;
+    color: black;
     height: 50px;
+    box-shadow: 12px 12px 12px rgb(0, 0, 0, 0.4);
 }
 
 /*-------------------------------------Promotion -------------------------------------*/
@@ -217,7 +232,6 @@ img {
     grid-template-columns: repeat(3, 1fr);
     margin-top: 30px;
     margin-left: 50px;
-
 }
 
 .promo-pic {

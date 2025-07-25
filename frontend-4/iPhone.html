@@ -4,130 +4,348 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iPhones</title>
-
+    <title>Our iPhones</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="iPhone.css">
+    <link rel="stylesheet" href="home_page.html">
 </head>
 
 <body>
-    <nav>
-        <div class="logo">
-            <i class="fa-brands fa-apple"></i>
-            <p>AppleZone</p>
-            <a href="">iPhone</a>
-            <a href="">MacBook</a>
-            <a href="">Apple watch</a>
-            <a href="">AirPods</a>
-            <a href="">iPad</a>
-        </div>
-
-        <div class="search">
-            <input type="text" placeholder="search">
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
-
-    </nav>
-    <div class="grid-iphones">
-        <div class="product">
-            <div>
-                <img src="pictures/iPhone 15.jpg" alt="">
+    <header>
+        <nav class="navbar">
+            <div class="navbar-left">
+                <i class="fa-brands fa-apple"></i>
+                <span>AppleZone</span>
             </div>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore rem incidunt eos deserunt earum non
-                fugit perspiciatis deleniti, natus quas! Earum dolores, nobis dolor eius facere cum voluptate veniam
-                omnis?
-            </p>
-        </div>
+            <ul class="navbar-links">
+                <li><a href="home_page.html">Home</a></li>
+                <li><a href="#boutique">Boutique</a></li>
+                <li><a href="#promotion">Promotions</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
 
-        <div class="product">
+            <div class="navbar-right">
+                <p>Votre panier</p>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </nav>
+    </header>
+
+    <h1>Découvrez nos iPhones</h1>
+
+
+    <div class="flex">
+        <aside class="filtrage">
+            <h3>Filtrage des produits</h3>
             <div>
-                <img src="pictures/iphone_15_pro.jpg" alt="">
+                <h3>Modèle</h3>
+                <label><input type="checkbox" name="modele" value="iPhone15"> iPhone 15</label><br>
+                <label><input type="checkbox" name="modele" value="iPhone14"> iPhone 14</label><br>
+                <label><input type="checkbox" name="modele" value="iPhone13"> iPhone 13</label><br>
+                <label><input type="checkbox" name="modele" value="iPhone12"> iPhone 12</label><br>
+                <label><input type="checkbox" name="modele" value="iPhone11"> iPhone 11</label><br>
+                <label><input type="checkbox" name="modele" value="iPhoneXs"> iPhone Xs</label><br>
+                <label><input type="checkbox" name="modele" value="iPhoneXr"> iPhone Xr</label><br>
+                <label><input type="checkbox" name="modele" value="iPhoneX"> iPhone X</label><br>
             </div>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore rem incidunt eos deserunt earum non
-                fugit perspiciatis deleniti, natus quas! Earum dolores, nobis dolor eius facere cum voluptate veniam
-                omnis?
-            </p>
-        </div>
-
-        <div class="product">
             <div>
-                <img src="pictures/iPhone_15_pro_max.jpg" alt="">
+                <h3>Stockage</h3>
+                <label><input type="checkbox" name="stockage" value="512"> 512Go</label><br>
+                <label><input type="checkbox" name="stockage" value="512"> 256Go</label><br>
+                <label><input type="checkbox" name="stockage" value="512"> 128Go</label><br>
+                <label><input type="checkbox" name="stockage" value="512"> 64Go</label><br>
             </div>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore rem incidunt eos deserunt earum non
-                fugit perspiciatis deleniti, natus quas! Earum dolores, nobis dolor eius facere cum voluptate veniam
-                omnis?
-            </p>
-        </div>
-
-        <div class="product">
             <div>
-                <img src="pictures/iPhone_14.jpg" alt="">
+                <h3>Couleurs</h3>
+                <label><input type="checkbox" name="couleur" value="red"> Red</label><br>
+                <label><input type="checkbox" name="couleur" value="blue"> Blue</label><br>
+                <label><input type="checkbox" name="couleur" value="white"> White</label><br>
+                <label><input type="checkbox" name="couleur" value="black"> Black</label><br>
             </div>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore rem incidunt eos deserunt earum non
-                fugit perspiciatis deleniti, natus quas! Earum dolores, nobis dolor eius facere cum voluptate veniam
-                omnis?
-            </p>
-        </div>
-
-        <div class="product">
             <div>
-                <img src="pictures/IPhone 14 Pro.jpg" alt="">
+                <h3>Etat</h3>
+                <label><input type="checkbox" name="etat" value="neuf"> Neuf</label><br>
+                <label><input type="checkbox" name="etat" value="bonne"> Bonne</label><br>
+                <label><input type="checkbox" name="etat" value="boite"> Avec Boite</label><br>
             </div>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore rem incidunt eos deserunt earum non
-                fugit perspiciatis deleniti, natus quas! Earum dolores, nobis dolor eius facere cum voluptate veniam
-                omnis?
-            </p>
-        </div>
-
-        <div class="product">
             <div>
-                <img src="pictures/iPhone_14_pro_max.jpg" alt="">
+                <h3>Prix</h3>
+                <label><input type="range" name="prix" min="200" max="1500"></label>
+            </div>
+        </aside>
+
+        <section>
+
+            <div class="product">
+                <div class="product-pic">
+                    <img src="pictures/iPhone16_bluemodele-removebg-preview.png" alt="">
+                </div>
+
+                <div class="description">
+                    <figcaption>
+                        <p><strong>Produit :</strong> iPhone 16</p>
+                        <p><strong>Stockage : </strong> 256 Go</p>
+                        <p><strong>batterie : </strong> 93%</p>
+                        <p><strong>Etat : </strong> Neuf</p>
+                        <p><strong>Prix Promo : </strong> 190 000 DA</p>
+                    </figcaption>
+
+                    <div class="command-link">
+                        <a class="link" href="">Ajouter au panier &nbsp;&nbsp; <i
+                                class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
             </div>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore rem incidunt eos deserunt earum non
-                fugit perspiciatis deleniti, natus quas! Earum dolores, nobis dolor eius facere cum voluptate veniam
-                omnis?
-            </p>
-        </div>
+            <div class="product">
+                <div class="product-pic">
+                    <img src="pictures/iPhoneXr-removebg-preview.png" alt="">
+                </div>
 
-        <div class="product">
-            <div>
-                <img src="pictures/Apple_13_pro_max.jpg" alt="">
+                <div class="description">
+                    <figcaption>
+                        <p><strong>Produit :</strong> iPhone Xr</p>
+                        <p><strong>Stockage : </strong> 64Go</p>
+                        <p><strong>batterie : </strong> 89%</p>
+                        <p><strong>Etat : </strong> Bonne</p>
+                        <p><strong>Prix Promo : </strong> 46 000 DA</p>
+                    </figcaption>
+
+                    <div class="command-link">
+                        <a class="link" href="">Ajouter au panier &nbsp;&nbsp; <i
+                                class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
             </div>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore rem incidunt eos deserunt earum non
-                fugit perspiciatis deleniti, natus quas! Earum dolores, nobis dolor eius facere cum voluptate veniam
-                omnis?
-            </p>
-        </div>
+            <div class="product">
+                <div class="product-pic">
+                    <img src="pictures/iPhone15promax-removebg-preview.png" alt="">
+                </div>
+                <div class="description">
+                    <figcaption>
+                        <p><strong>Produit :</strong> iPhone 15 Pro Max</p>
+                        <p><strong>Stockage : </strong> 512 Go</p>
+                        <p><strong>batterie : </strong> 88%</p>
+                        <p><strong>Etat : </strong> Neuf</p>
+                        <p><strong>Prix Promo : </strong> 145 500 DA</p>
+                    </figcaption>
 
-        <div class="product">
-            <div>
-                <img src="pictures/iPhone_13_pro.jpg" alt="">
+                    <div class="command-link">
+                        <a class="link" href="">Ajouter au panier &nbsp;&nbsp; <i
+                                class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
             </div>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore rem incidunt eos deserunt earum non
-                fugit perspiciatis deleniti, natus quas! Earum dolores, nobis dolor eius facere cum voluptate veniam
-                omnis?
-            </p>
-        </div>
+            <div class="product">
+                <div class="product-pic">
+                    <img src="pictures/iPhone12-removebg-preview.png" alt="">
+                </div>
 
-        <div class="product">
-            <div>
-                <img src="pictures/Apple_iPhone_13.jpg" alt="">
+                <div class="description">
+                    <figcaption>
+                        <p><strong>Produit :</strong> iPhone 12</p>
+                        <p><strong>Stockage : </strong> 256 Go</p>
+                        <p><strong>batterie : </strong> 87%</p>
+                        <p><strong>Etat : </strong> Très Bonne</p>
+                        <p><strong>Prix Promo : </strong> 71 000 DA</p>
+                    </figcaption>
+
+                    <div class="command-link">
+                        <a class="link" href="">Ajouter au panier &nbsp;&nbsp; <i
+                                class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
             </div>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore rem incidunt eos deserunt earum non
-                fugit perspiciatis deleniti, natus quas! Earum dolores, nobis dolor eius facere cum voluptate veniam
-                omnis?</p>
-        </div>
+            <div class="product">
+                <div class="product-pic">
+                    <img src="pictures/iPhone_13_Pro_Max_-_128GB_-_Silver_-_Grade_A_-_The_iOutlet-removebg-preview.png"
+                        alt="">
+                </div>
+
+                <div class="description">
+                    <figcaption>
+                        <p><strong>Produit :</strong> iPhone 13 Pro Max</p>
+                        <p><strong>Stockage : </strong> 128Go</p>
+                        <p><strong>batterie : </strong> 90%</p>
+                        <p><strong>Etat : </strong> Neuf</p>
+                        <p><strong>Prix Promo : </strong> 173 000 DA</p>
+                    </figcaption>
+
+                    <div class="command-link">
+                        <a class="link" href="">Ajouter au panier &nbsp;&nbsp; <i
+                                class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="product">
+                <div class="product-pic">
+                    <img src="pictures/Apple_iPhone_11_-_256_GB_-__PRODUCT_RED__Unlocked__for_sale_online___eBay-removebg-preview.png"
+                        alt="">
+                </div>
+
+                <div class="description">
+                    <figcaption>
+                        <p><strong>Produit :</strong> iPhone 11</p>
+                        <p><strong>Stockage : </strong> 256 Go</p>
+                        <p><strong>batterie : </strong> 81%</p>
+                        <p><strong>Etat : </strong> Neuf</p>
+                        <p><strong>Prix Promo : </strong> 66 000 DA</p>
+                    </figcaption>
+
+                    <div class="command-link">
+                        <a class="link" href="">Ajouter au panier &nbsp;&nbsp; <i
+                                class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="product">
+                <div class="product-pic">
+                    <img src="pictures/Apple_iPhone_14_Pro_Max__256_GB__-_Space_Schwarz-removebg-preview.png" alt="">
+                </div>
+                <div class="description">
+                    <figcaption>
+                        <p><strong>Produit :</strong> iPhone 14 Pro Max</p>
+                        <p><strong>Stockage : </strong> 512 Go</p>
+                        <p><strong>batterie : </strong> 89%</p>
+                        <p><strong>Etat : </strong> Neuf avec boite</p>
+                        <p><strong>Prix Promo : </strong> 182 000 DA</p>
+                    </figcaption>
+
+                    <div class="command-link">
+                        <a class="link" href="">Ajouter au panier &nbsp;&nbsp; <i
+                                class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="product">
+                <div class="product-pic">
+                    <img src="pictures/__iPhone_XS_Giveaway_Contest_2021_-_Enter_to_win_iPhone_XS_FREE-removebg-preview.png"
+                        alt="">
+                </div>
+
+                <div class="description">
+                    <figcaption>
+                        <p><strong>Produit :</strong> iPhone Xs </p>
+                        <p><strong>Stockage : </strong> 256 Go</p>
+                        <p><strong>batterie : </strong> 87% (remplacé)</p>
+                        <p><strong>Etat : </strong> Bonne</p>
+                        <p><strong>Prix Promo : </strong> 50 000 DA</p>
+                    </figcaption>
+
+                    <div class="command-link">
+                        <a class="link" href="">Ajouter au panier &nbsp;&nbsp; <i
+                                class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="product">
+                <div class="product-pic">
+                    <img src="pictures/Restored_Apple_iPhone_13_-_Fully_Unlocked_-_128_GB_Pink__Refurbished__-_Walmart_com-removebg-preview.png"
+                        alt="">
+                </div>
+
+                <div class="description">
+                    <figcaption>
+                        <p><strong>Produit :</strong> iPhone 13</p>
+                        <p><strong>Stockage : </strong> 128 Go</p>
+                        <p><strong>batterie : </strong> 82%</p>
+                        <p><strong>Etat : </strong> Bonne (afficheur remp)</p>
+                        <p><strong>Prix Promo : </strong> 58 000 DA </p>
+                    </figcaption>
+
+                    <div class="command-link">
+                        <a class="link" href="">Ajouter au panier &nbsp;&nbsp; <i
+                                class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product-pic">
+                    <img src="pictures/Apple_iPhone_16__iPhone_16_Plus__iPhone_16_Pro_and_iPhone_16_Pro_Max_launched__Price_and_Specifications-removebg-preview.png"
+                        alt="">
+                </div>
+
+                <div class="description">
+                    <figcaption>
+                        <p><strong>Produit :</strong> iPhone 16 +</p>
+                        <p><strong>Stockage : </strong> 64 Go</p>
+                        <p><strong>batterie : </strong> 98%</p>
+                        <p><strong>Etat : </strong> Neuf avec boite</p>
+                        <p><strong>Prix Promo : </strong> 159 000 DA</p>
+                    </figcaption>
+
+                    <div class="command-link">
+                        <a class="link" href="">Ajouter au panier &nbsp;&nbsp; <i
+                                class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product-pic">
+                    <img src="pictures/iPhone12promax-removebg-preview.png" alt="">
+                </div>
+
+                <div class="description">
+                    <figcaption>
+                        <p><strong>Produit :</strong> iPhone 12 Pro Max</p>
+                        <p><strong>Stockage : </strong> 256 Go</p>
+                        <p><strong>batterie : </strong> 83%</p>
+                        <p><strong>Etat : </strong> Très Bonne</p>
+                        <p><strong>Prix Promo : </strong> 80 000 DA</p>
+                    </figcaption>
+
+                    <div class="command-link">
+                        <a class="link" href="">Ajouter au panier &nbsp;&nbsp; <i
+                                class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="product">
+                <div class="product-pic">
+                    <img src="pictures/iPhone_X-removebg-preview(1).png" alt="">
+                </div>
+
+                <div class="description">
+                    <figcaption>
+                        <p><strong>Produit :</strong> iPhone x</p>
+                        <p><strong>Stockage : </strong> 64 Go</p>
+                        <p><strong>batterie : </strong> 79%</p>
+                        <p><strong>Etat : </strong> Bonne </p>
+                        <p><strong>Prix Promo : </strong> 41 000 DA</p>
+                    </figcaption>
+
+                    <div class="command-link">
+                        <a class="link" href="">Ajouter au panier &nbsp;&nbsp; <i
+                                class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
 
     </div>
+
 
 </body>
 
