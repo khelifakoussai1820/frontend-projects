@@ -11,8 +11,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="signup.css">
-    <link rel="stylesheet" href="login.html">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/signup.css') }}">
 
 
 </head>
@@ -20,12 +19,13 @@
 <body>
 
     <fieldset>
-        <form action="">
+        <form action="/signup" method="post">
             <h1>SIGN UP</h1>
+
             <div class="div1">
                 <p>Nom</p>
                 <div class="input">
-                    <input type="text" placeholder=" Nom" required>
+                    <input type="text" name="nom" placeholder=" Nom" required>
                     <i class="fa-solid fa-circle-user"></i>
                 </div>
             </div>
@@ -33,7 +33,7 @@
             <div class="div1">
                 <p>Prénom</p>
                 <div class="input">
-                    <input type="text" placeholder=" Prénom" required>
+                    <input type="text" name="prenom" placeholder=" Prénom" required>
                     <i class="fa-solid fa-circle-user"></i>
                 </div>
             </div>
@@ -41,15 +41,15 @@
             <div class="div1">
                 <p>E-mail</p>
                 <div class="input">
-                    <input type="email" placeholder=" e-mail" required>
+                    <input type="email" name="email" placeholder=" e-mail" required>
                     <i class="fa-solid fa-envelope"></i>
                 </div>
             </div>
 
             <div class="div1">
-                <p>E-mail</p>
+                <p>Téléphone</p>
                 <div class="input">
-                    <input type="tel" placeholder=" +213 x xx xx xx">
+                    <input type="tel" name="telephone" placeholder="+213 x xx xx xx">
                     <i class="fa-solid fa-phone-volume"></i>
                 </div>
             </div>
@@ -57,7 +57,7 @@
             <div class="div1">
                 <p>Mot de passe</p>
                 <div class="input">
-                    <input type="password" placeholder=" password" minlength="8" required>
+                    <input type="password" name="password" placeholder=" password" minlength="8" required>
                     <i class="fa-solid fa-lock"></i>
                 </div>
             </div>
@@ -65,17 +65,18 @@
             <div class="div1">
                 <p>Confirmer Mot de passe</p>
                 <div class="input">
-                    <input type="password" placeholder=" confirm password" required>
+                    <input type="password" name="confirm_password" placeholder=" confirm password" required>
                     <i class="fa-solid fa-eye-slash"></i>
                 </div>
             </div>
 
             <div class="link-btn">
-                <p>Vous avez déjà un compte ? <a href="login.html" target="_blank"">Connectez-vous</a></p>
-                <button type=" submit">Créer un compte</button>
+                <p>Vous avez déjà un compte ? <a href="login.html" target="_blank">Connectez-vous</a></p>
+                <button type="submit">Créer un compte</button>
             </div>
         </form>
     </fieldset>
+
 
 </body>
 
